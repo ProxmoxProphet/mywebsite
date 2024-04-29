@@ -1,55 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Light Blue */
-            color: #000080; /* Navy Blue */
-            margin: 20px;
-        }
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-        header {
-            text-align: center;
-            padding: 20px;
-        }
+.bg-image {
+  /* The image used */
+  background-image: url('backgroundpic.jpg');
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-        section {
-            margin: 20px 0;
-        }
+/* Position text in the center of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
 
-        footer {
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+/* Style for the title text */
+.title-text {
+  font-size: 50px; /* Large size for the title */
+  color: black; /* Black color for the title text */
+}
+
+/* Style for the smaller text */
+.small-text {
+  font-size: 20px; /* Smaller size for the subtitle */
+  color: black; /* Black color for the subtitle text */
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Political Science Major | Philosophy Minor</p>
-    </header>
 
-    <section>
-        <h2>Bio</h2>
-        <p>
-            I'm a 20-year-old college student pursuing a major in Political Science and a minor in Philosophy.
-            My interests span the realms of technology, law, philosophy, and the joy of driving. Exploring the
-            intersections of these fields keeps me engaged and motivated in my academic journey.
-        </p>
-    </section>
+<div class="bg-image"></div>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </section>
+<div class="bg-text">
+  <div class="title-text">Main Page</div>
+  <div class="small-text">Under Construction</div>
+  <div class="small-text">Under Construction</div>
+  <div class="small-text">Under Construction</div>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>
